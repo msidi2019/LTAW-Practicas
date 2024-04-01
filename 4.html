@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebGL Transformations</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/3.4.2/gl-matrix-min.js"></script>
+</head>
+
+<body onload="init()">
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+    <br>
+    Step: <input type="text" value="0.01" id="step">
+</body>
+
+<script>
+    var gl;
+    var stepValue = 0.01;
+    var matrix = glMatrix.mat4.create();
+
+    function init() {
+        var canvas = document.getElementById("myCanvas");
+        gl = canvas.getContext("webgl");
+        if (!gl) {
+            console.log("Failed to get the rendering context for WebGL");
+            return;
+        }
+
+        var vs = `
+            attribute vec4 a_Position;
+            uniform mat4 u_Matrix;
+            void main() {
+                gl_Position = u_Matrix * a_Position;
+            }
+        `;
+        var fs = `
+            void main() {
+                gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);
+            }
+        `;
+        var vertexShader = makeShader(gl, vs, gl.VERTEX_SHADER);
+        var fragmentShader = makeShader(gl, fs, gl.FRAGMENT_SHADER);
+        var glProgram = gl.createProgram();
+        gl.attachShader(glProgram, vertexShader);
+        gl.attachShader(glProgram, fragmentShader);
+        gl.linkProgram(glProgram);
+        gl.useProgram(glProgram);
+
+        var vertices = [
+            -0.6, 0.2, 0.0, -0.8, -0.2, 0.0, -0.4, -0.2, 0.0, // Left Column
+            0.6, 0.2, 0.0, 0.8, -0.2, 0.0, 0.4, -0.2, 0.0, // Right Column
+            -0.8, -0.2, 0.0, 0.8, -0.2, 0.0, 0.0, 0.8, 0.0 // Roof
+        ];
+        var vertexBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+        var a_Position = gl.getAttribLocation(glProgram, 'a_Position');
+        gl.vertexAttribPointer(a_Position, 3, gl.FLOAT, false, 0, 0);
+        gl.enableVertexAttribArray(a_Position);
+
+        gl.clearColor(0.0, 0.0, 1.0, 1.0);
+
+        document.onkeydown = function (ev) {
+            stepValue = parseFloat(document.getElementById("step").value);
+            switch (ev.key) {
+                case "ArrowLeft":
+                    translate(-stepValue, 0.0, 0.0);
+                    break;
+                case "ArrowRight":
+                    translate(stepValue, 0.0, 0.0);
+                    break;
+                case "ArrowUp":
+                    translate(0.0, stepValue, 0.0);
+                    break;
+                case "ArrowDown":
+                    translate(0.0, -stepValue, 0.0);
+                    break;
+                case "PageUp":
+                    scale(1.0 + stepValue, 1.0 + stepValue, 1.0 + stepValue);
+                    break;
+                case "PageDown":
+                    scale(1.0 - stepValue, 1.0 - stepValue, 1.0 - stepValue);
+                    break;
+                case "w":
+                    translate(0.0, stepValue, 0.0);
+                    break;
+                case "a":
+                    translate(-stepValue, 0.0, 0.0);
+                    break;
+                case "s":
+                    translate(0.0, -stepValue, 0.0);
+                    break;
+                case "d":
+                    translate(stepValue, 0.0, 0.0);
+                    break;
+                case "z":
+                    rotate(0.0, 0.0, stepValue);
+                    break;
+                case "x":
+                    rotate(0.0, 0.0, -stepValue);
+                    break;
+                case "c":
+                    rotate(0.0, 0.0, stepValue);
+                    break;
+            }
+            drawScene();
+        };
+
+        drawScene();
+    }
+
+    function drawScene() {
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        var mvMatrixUniform = gl.getUniformLocation(gl.program, "u_Matrix");
+        gl.uniformMatrix4fv(mvMatrixUniform, false, matrix);
+        gl.drawArrays(gl.TRIANGLES, 0, 9);
+    }
+
+    function translate(x, y, z) {
+        glMatrix.mat4.translate(matrix, matrix, [x, y, z]);
+    }
+
+    function scale(x, y, z) {
+        glMatrix.mat4.scale(matrix, matrix, [x, y, z]);
+    }
+
+    function rotate(x, y, z) {
+        glMatrix.mat4.rotate(matrix, matrix, z, [x, y, z]);
+    }
+
+    function makeShader(gl, src, type) {
+        var shader = gl.createShader(type);
+        gl.shaderSource(shader, src);
+        gl.compileShader(shader);
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+            console.log("Error compiling shader: " + gl.getShaderInfoLog(shader));
+            return null;
+        }
+        return shader;
+    }
+</script>
+
+</html>
