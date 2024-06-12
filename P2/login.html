@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul of Vinyl</title>
+    <link rel="icon" type="image/x-icon" href="Fotos/vinn.jpg">
+    <link rel="stylesheet" href="tienda.css">
+    <script src="slider.js" defer></script>
+</head>
+<body>
+    <!-- Menú deslizante -->
+    <button id="rules-btn" class="btn rules-btn">Menú</button>
+
+    <div id="rules" class="rules">
+        <h2 id="title">Menú de navegación.</h1>
+        <ul id="lista">
+            <a href="tienda.html" class="menu">Pagina principal.</a>
+            <li class="menu">Productos <br>
+                <a href="rap.html" class="menu">Vinilos de rap</a><br>
+                <a href="pc.html" class="menu">Vinilos de rock</a><br>
+                <a href="switch.html" class="menu">Vinilos de r&b</a><br> 
+            </li>
+            <a href="nosotros.html" class="menu">Sobre nosotros.</a><br>
+            <a href="contacto.html" class="menu">Contacto</a> <br>
+            <img src="Fotos/vin1.jpg" alt="Soul of Vinyl" id="SoV" width="60%">
+
+            
+        </ul>
+        <button id="close-btn" class="btn">Cerrar</button><br>
+    </div>
+
+    
+    <h1 id="titulo">Soul of Vinyl</h1>
+    <div class="productos">
+        <h2>Introduce tu usuario y contraseña.</h2>
+        <div class="Juegos">
+            <form action="/procesar" method="get">
+                <label for="usuario">Usuario:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="pwd">Contraseña:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <input type="submit" value="Enviar"/>
+                <input type="submit" action= "/registrar" value="Registrar">
+            </form>
+        </div>
+    </div>
+    <button class="carrito" onclick="window.location.href='cesta.html'"></button>
+    <button class="login" onclick="window.location.href='login.html'"></button>
+</body>
+</html>
