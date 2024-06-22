@@ -1,131 +1,147 @@
-body{
-    background-image:url('Fotos/nirvana.jpg');
+body {
+    background-image: url('Fotos/nirvana.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
 }
 
-a{
-    
-    font-size: 25px;
-}
-
-h1{
-    font-family: "darksouls";
-    color: rgb(255, 255, 255);
-    margin-left: 650px;
-}
-
-#list{
-    font-family: "darksouls";
-    color: rgb(0, 0, 0);
-    margin-left: 500px;
+a {
     font-size: 20px;
+    color: #1e90ff;
+    text-decoration: none;
 }
 
-#titulo{
+a:hover {
     text-decoration: underline;
 }
 
-#precio{
-    margin-left: 900px;
-}
-
-
-#Bio{
-    width: 1500px;
-    padding: 10px 30px;
-    padding-bottom: 50px;
-    /*  position: absolute; */
-    margin: auto;
-    /* transform: translate(-50%, -50%);*/
-    background-color: rgba(41, 29, 29,0.9);
-    /*  top: 50%;
-    left: 50%;
-*/    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-    margin-top: 100px;
-    color: rgb(0, 0, 0);
-    
-}
-
-#Nevermind{
-
-   position: absolute;
-}
-
-.sinopsis{
-    color: rgb(255, 255, 255);
-    display: flex;
-    /*text-align: right;*/
-    margin-left: 500px;
-    font-family: 'darksouls';
-    border: 2px;
-    border-color: aquamarine;
-    border-radius: 2px;
-}
-
-
-.btn{
-    cursor: pointer;
-    font-size: 100%;
-    border: 0;
-    padding: 10px 20px;
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    color: #ff6347;
+    text-align: center;
     margin-top: 50px;
-    background: rgb(241,119,87);
-    color: rgb(7, 7, 7);
+}
+
+#list {
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+    margin-left: 200px;
+    font-size: 18px;
+}
+
+#titulo {
+    text-decoration: underline;
+}
+
+#precio {
+    margin-left: 600px;
+    color: #ff4500;
+}
+
+#Bio {
+    width: 80%;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    color: #dcdcdc;
+    text-align: justify;
+}
+
+#Nevermind {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.sinopsis {
+    color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: 'Georgia', serif;
+    border: 1px solid #1e90ff;
     border-radius: 5px;
-    font-family: 'kingdom';
+    padding: 15px;
 }
 
-.btn:focus{
-    outline: 0;
+.btn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #ff6347;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Tahoma', sans-serif;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.btn:hover{
-    background: #222;
+.btn:focus {
+    outline: none;
 }
 
-.btn:active{
-    transform: scale(0.98);
+.btn:hover {
+    background: #ffa07a;
 }
 
-.rules-btn{
+.btn:active {
+    transform: scale(0.95);
+}
+
+.rules-btn {
     position: absolute;
-    top: 30px;
-    left: 30px;
-    
+    top: 20px;
+    left: 20px;
 }
 
-.rules{
-    position: absolute;
+.rules {
+    position: fixed;
     top: 0;
     left: 0;
-    background-color:rgba(53,53,53, 0.9);
-    color: rgb(255, 255, 255);
-    min-height: 100vh;
-    max-width: 100%;
-    width: 400px;
-    line-height: 1.5;
-    transform: translateX(-400px);
-    transition: transform 1s ease-in-out;
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    height: 100%;
+    width: 350px;
+    padding: 20px;
+    transform: translateX(-350px);
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
 }
 
-.rules.show{
+.rules.show {
     transform: translateX(0);
 }
-#lista{
-    font-family: 'darksouls';
-}
-#close-btn{
-    margin-left: 5px;
+
+#lista {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.menu{
-    background-color: rgba(53, 53, 53, 0);
-    padding: 15px;
-    color: white;
-    margin-top: 30px;
-    text-decoration: none;
-    font-size: 30px;
+#close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
     cursor: pointer;
-    
+    margin-top: 20px;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #f5f5f5;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu:hover {
+    background-color: rgba(0, 0, 0, 0.9);
 }
