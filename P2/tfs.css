@@ -19,19 +19,19 @@ h1 {
 
 #list {
     font-family: 'Playfair Display', serif;
-    color: #000; 
+    color: #000; /* Negro */
     margin-left: 500px;
     font-size: 20px;
 }
 
 #titulo {
     text-decoration: underline;
-    color: #000; 
+    color: #000; /* Negro */
 }
 
 #precio {
     margin-left: 900px;
-    color: #000; 
+    color: #000; /* Negro */
 }
 
 #Bio {
@@ -51,7 +51,7 @@ h1 {
 }
 
 .sinopsis {
-    color: #FFF; 
+    color: #FFF; /* Blanco */
     display: flex;
     margin-left: 500px;
     font-family: 'Playfair Display', serif;
@@ -66,8 +66,8 @@ h1 {
     border: 0;
     padding: 10px 20px;
     margin-top: 50px;
-    background: rgb(241, 119, 87);
-    color: #070707; 
+    background: rgb(224, 38, 60);
+    color: #070707; /* Negro */
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     transition: background 0.3s ease, transform 0.1s ease;
@@ -78,8 +78,8 @@ h1 {
 }
 
 .btn:hover {
-    background: #222; 
-    color: #FFF; 
+    background: #222; /* Negro */
+    color: #FFF; /* Blanco */
 }
 
 .btn:active {
@@ -98,7 +98,7 @@ h1 {
     top: 0;
     left: 0;
     background-color: rgba(53, 53, 53, 0.9); 
-    color: #FFF; 
+    color: #FFF; /* Blanco */
     min-height: 100vh;
     max-width: 100%;
     width: 400px;
@@ -133,6 +133,7 @@ h1 {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
 }
+
 .carrito{
     height: 60px;
     width: 60px;
