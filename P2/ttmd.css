@@ -7,47 +7,47 @@ body {
 
 a {
     font-size: 25px;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
     text-decoration: none;
 }
 
 h1 {
     font-family: sans-serif;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
     margin-left: 650px;
     text-align: center;
 }
 
 #list {
     font-family: sans-serif;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
     margin-left: 500px;
     font-size: 20px;
 }
 
 #titulo {
     text-decoration: underline;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
 }
 
 #precio {
     margin-left: 900px;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
 }
 
 #Bio {
     width: 80%;
     max-width: 1500px;
     padding: 10px 30px 250px 30px;
-    background-color: rgba(245, 222, 170, 0.9); 
+    background-color: rgba(249, 176, 228, 0.9); /* Beige con opacidad */
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
     margin: 100px auto;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
 }
 
 .sinopsis {
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
     display: flex;
     margin-left: 500px;
     border: 2px solid aquamarine;
@@ -61,10 +61,10 @@ h1 {
     border: 0;
     padding: 10px 20px;
     margin-top: 50px;
-    background: rgb(241, 119, 87);
-    color: rgb(7, 7, 7); 
+    background: rgb(215, 128, 215);
+    color: rgb(7, 7, 7); /* Negro */
     border-radius: 5px;
-    font-family: 'kingdom', sans-serif;
+    font-family: sans-serif;
     transition: background 0.3s ease, transform 0.1s ease;
 }
 
@@ -73,8 +73,8 @@ h1 {
 }
 
 .btn:hover {
-    background: #222; 
-    color: #FFF; 
+    background: #222; /* Negro */
+    color: #FFF; /* Blanco */
 }
 
 .btn:active {
@@ -85,15 +85,15 @@ h1 {
     position: absolute;
     top: 30px;
     left: 30px;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
 }
 
 .rules {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(53, 53, 53, 0.9); 
-    color: rgb(255, 255, 255); 
+    background-color: rgba(53, 53, 53, 0.9); /* Gris oscuro con opacidad */
+    color: rgb(255, 255, 255); /* Blanco */
     min-height: 100vh;
     max-width: 100%;
     width: 400px;
@@ -110,7 +110,7 @@ h1 {
 
 #close-btn {
     margin-left: 5px;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); /* Negro */
 }
 
 .menu {
@@ -123,6 +123,7 @@ h1 {
     cursor: pointer;
     font-family: sans-serif;
 }
+
 .carrito{
     height: 60px;
     width: 60px;
