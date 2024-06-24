@@ -65,7 +65,7 @@ h1 {
     border: 0;
     padding: 10px 20px;
     margin-top: 50px;
-    background: rgb(241, 119, 87);
+    background: rgb(5, 85, 44);
     color: #070707; 
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
@@ -96,7 +96,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(53, 53, 53, 0.9); 
+    background-color: rgba(12, 109, 82, 0.9); 
     color: #FFF; 
     min-height: 100vh;
     max-width: 100%;
@@ -123,7 +123,7 @@ h1 {
 }
 
 .menu {
-    background-color: rgba(53, 53, 53, 0);
+    background-color: rgba(9, 107, 83, 0);
     padding: 15px;
     color: #FFF; 
     margin-top: 30px;
