@@ -1,105 +1,107 @@
-body{
-    background-image:url('Fotos/tpabfondo.jpg');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    background-image: url('Fotos/tpabfondo.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-a{
-    
+a {
     font-size: 25px;
+    color: #000; /* Negro */
 }
 
-h1{
-    font-family: "darksouls";
-    color: rgb(255, 255, 255);
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #FFF; /* Blanco */
     margin-left: 650px;
+    text-align: center;
 }
 
-#list{
-    font-family: "darksouls";
-    color: rgb(0, 0, 0);
+#list {
+    font-family: 'Playfair Display', serif;
+    color: #000; /* Negro */
     margin-left: 500px;
     font-size: 20px;
 }
 
-#titulo{
+#titulo {
     text-decoration: underline;
+    color: #000; /* Negro */
 }
 
-#precio{
+#precio {
     margin-left: 900px;
+    color: #000; /* Negro */
 }
 
-
-#Bio{
-    width: 1500px;
+#Bio {
+    width: 80%;
+    max-width: 1500px;
     padding: 10px 30px;
     padding-bottom: 200px;
-    /*  position: absolute; */
-    margin: auto;
-    /* transform: translate(-50%, -50%);*/
-    background-color: rgba(71, 83, 97,0.9);
-    /*  top: 50%;
-    left: 50%;
-*/    border-radius: 20px;
+    background-color: rgba(71, 83, 97, 0.9); 
+    border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-    margin-top: 100px;
-    color: rgb(0, 0, 0);
-    
+    margin: 100px auto;
+    color: #FFF; /* Blanco */
+    font-family: 'Roboto', sans-serif;
 }
 
-#Bloodborne{
-
-   position: absolute;
+#tpab {
+    position: absolute;
 }
 
-.sinopsis{
-    color: rgb(255, 255, 255);
+.sinopsis {
+    color: #FFF; /* Blanco */
     display: flex;
-    /*text-align: right;*/
     margin-left: 500px;
-    font-family: 'darksouls';
-    border: 2px;
-    border-color: aquamarine;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid aquamarine;
     border-radius: 2px;
+    padding: 10px;
 }
 
-
-.btn{
+.btn {
     cursor: pointer;
     font-size: 100%;
     border: 0;
     padding: 10px 20px;
     margin-top: 50px;
-    background: rgb(241,119,87);
-    color: rgb(7, 7, 7);
+    background: rgb(241, 119, 87);
+    color: #070707; /* Negro */
     border-radius: 5px;
-    font-family: 'kingdom';
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s ease, transform 0.1s ease;
 }
 
-.btn:focus{
-    outline: 0;
+.btn:focus {
+    outline: none;
 }
 
-.btn:hover{
-    background: #222;
+.btn:hover {
+    background: #222; /* Negro */
+    color: #FFF; /* Blanco */
 }
 
-.btn:active{
+.btn:active {
     transform: scale(0.98);
 }
 
-.rules-btn{
+.rules-btn {
     position: absolute;
     top: 30px;
     left: 30px;
-    
+    color: #000; /* Negro */
 }
 
-.rules{
+.rules {
     position: absolute;
     top: 0;
     left: 0;
-    background-color:rgba(53,53,53, 0.9);
-    color: rgb(255, 255, 255);
+    background-color: rgba(53, 53, 53, 0.9); 
+    color: #FFF; /* Blanco */
     min-height: 100vh;
     max-width: 100%;
     width: 400px;
@@ -107,27 +109,32 @@ h1{
     transform: translateX(-400px);
     transition: transform 1s ease-in-out;
     z-index: 1;
+    font-family: 'Roboto', sans-serif;
 }
 
-.rules.show{
+.rules.show {
     transform: translateX(0);
 }
-#lista{
-    font-family: 'darksouls';
-}
-#close-btn{
-    margin-left: 5px;
+
+#lista {
+    font-family: 'Playfair Display', serif;
+    color: #000; /* Negro */
 }
 
-.menu{
+#close-btn {
+    margin-left: 5px;
+    color: #000; /* Negro */
+}
+
+.menu {
     background-color: rgba(53, 53, 53, 0);
     padding: 15px;
-    color: white;
+    color: #FFF; /* Blanco */
     margin-top: 30px;
     text-decoration: none;
     font-size: 30px;
     cursor: pointer;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 .carrito{
