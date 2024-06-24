@@ -7,7 +7,7 @@ body {
 
 a {
     font-size: 25px;
-    color: #000; /* Azul oscuro */
+    color: #000; 
 }
 
 h1 {
@@ -26,12 +26,12 @@ h1 {
 
 #titulo {
     text-decoration: underline;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 #precio {
     margin-left: 900px;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 #Bio {
