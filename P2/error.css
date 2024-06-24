@@ -1,8 +1,9 @@
-body{
-    background-image:url('Fotos/errormusic.jpg');
+body {
+    background-image: url('Fotos/errormusic.jpg');
+    font-family: 'Arial', sans-serif; 
 }
 
-.btn{
+.btn {
     cursor: pointer;
     font-size: 100%;
     border: 0;
@@ -11,33 +12,32 @@ body{
     background: rgb(241,119,87);
     color: rgb(7, 7, 7);
     border-radius: 5px;
-    font-family: 'kingdom';
+    font-family: 'Arial', sans-serif; 
 }
 
-.btn:focus{
+.btn:focus {
     outline: 0;
 }
 
-.btn:hover{
+.btn:hover {
     background: #222;
 }
 
-.btn:active{
+.btn:active {
     transform: scale(0.98);
 }
 
-.rules-btn{
+.rules-btn {
     position: absolute;
     top: 30px;
     left: 30px;
-    
 }
 
-.rules{
+.rules {
     position: absolute;
     top: 0;
     left: 0;
-    background-color:rgba(53,53,53, 0.9);
+    background-color: rgba(53,53,53, 0.9);
     color: rgb(255, 255, 255);
     min-height: 100vh;
     max-width: 100%;
@@ -45,19 +45,22 @@ body{
     line-height: 1.5;
     transform: translateX(-400px);
     transition: transform 1s ease-in-out;
+    font-family: 'Arial', sans-serif; 
 }
 
-.rules.show{
+.rules.show {
     transform: translateX(0);
 }
-#lista{
-    font-family: 'darksouls';
+
+#lista {
+    font-family: 'Arial', sans-serif; 
 }
-#close-btn{
+
+#close-btn {
     margin-left: 5px;
 }
 
-.menu{
+.menu {
     background-color: rgba(53, 53, 53, 0);
     padding: 15px;
     color: white;
@@ -65,5 +68,5 @@ body{
     text-decoration: none;
     font-size: 30px;
     cursor: pointer;
-    
+    font-family: 'Arial', sans-serif; 
 }
