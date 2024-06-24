@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "VinylFont";
+    src: url(Vinylfont.ttf);
+}
+
+body {
+    background-image: url('vinilo1.jpg');
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+button {
+    margin-top: -40px;
+    border-color: rgb(204, 0, 102); 
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: "VinylFont"; 
+    color: rgb(255, 204, 0); 
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.productos {
+    width: 100%;
+    padding: 50px 30px;
+    margin: auto;
+    background-color: rgba(0, 153, 204, 0.9); /
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    margin-top: -50px;
+    color: white;
+}
+
+.Géneros img {
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 100%;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 50px;
+    background: rgb(204, 0, 102); 
+    color: rgb(255, 255, 255); 
+    border-radius: 5px;
+    font-family: 'VinylFont'; 
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover {
+    background: #222;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.rules-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.rules {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    background-color: rgba(0, 153, 204, 0.9); 
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    line-height: 1.5;
+    transition: left 1s ease-in-out;
+}
+
+.rules.show {
+    left: 0;
+}
+
+.menu {
+    background-color: rgba(0, 153, 204, 0);
+    padding: 15px;
+    color: white;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#title {
+    margin-left: 5px;
+}
+
+.carrito{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background: url(Fotos/carrito.jpg);
+    background-color: coral;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.login{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background: url(Fotos/login.png);
+    background-color: coral;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 800px;
+    right: 30px;
+    cursor: pointer;
+}
