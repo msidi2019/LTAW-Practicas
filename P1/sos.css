@@ -38,7 +38,7 @@ h1 {
     width: 80%;
     max-width: 1500px;
     padding: 10px 30px 100px 30px;
-    background-color: rgba(0, 0, 255, 0.7); 
+    background-color: rgba(84, 161, 200, 0.7); 
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
     margin: 100px auto;
@@ -66,7 +66,7 @@ h1 {
     border: 0;
     padding: 10px 20px;
     margin-top: 50px;
-    background: rgb(241, 119, 87);
+    background: rgb(87, 179, 241);
     color: #070707; 
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
@@ -97,7 +97,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 128, 0.9); 
+    background-color: rgba(0, 98, 128, 0.9); 
     color: #FFF; 
     min-height: 100vh;
     max-width: 100%;
@@ -124,7 +124,7 @@ h1 {
 }
 
 .menu {
-    background-color: rgba(53, 53, 53, 0);
+    background-color: rgba(63, 44, 231, 0);
     padding: 15px;
     color: #FFF; 
     margin-top: 30px;
