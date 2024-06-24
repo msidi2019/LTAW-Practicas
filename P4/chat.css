@@ -1,39 +1,28 @@
-@font-face{
-    font-family: "darksouls";
-    src: url(OptimusPrinceps.ttf);
+body {
+    background-image: url('Fotos/snupi.jpg');
+    font-family: 'Roboto', sans-serif; 
 }
 
-body{
-    background-image:url('Fotos/snupi.jpg');
-}
-
-.chat{
+.chat {
     width: 800px;
     padding: 25px 30px;
-    /*  position: absolute; */
     margin: auto;
-    /* transform: translate(-50%, -50%);*/
-    background-color: rgba(235,148,160,0.9);
-    /*  top: 50%;
-    left: 50%;
-*/    border-radius: 20px;
+    background-color: rgba(235, 148, 160, 0.9);
+    border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
     margin-top: 10px;
     color: rgb(0, 0, 0);
-    font-family: 'darksouls';
+    font-family: 'Roboto', sans-serif; 
 }
-#usuario{
+
+#usuario {
     width: 200px;
     padding: 25px 30px;
-    /*  position: absolute; */
     margin: auto;
-    /* transform: translate(-50%, -50%);*/
-    background-color: rgba(235,148,160,0.9);
-    /*  top: 50%;
-    left: 50%;
-*/    border-radius: 20px;
+    background-color: rgba(235, 148, 160, 0.9);
+    border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
     margin-top: 230px;
     color: rgb(0, 0, 0);
-    font-family: 'darksouls';
+    font-family: 'Roboto', sans-serif; 
 }
