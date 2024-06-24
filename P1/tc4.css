@@ -7,42 +7,41 @@ body {
 
 a {
     font-size: 25px;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    color: #FFF; /* Blanco */
+    color: #FFF; 
     margin-left: 650px;
     text-align: center;
 }
 
 #list {
     font-family: 'Playfair Display', serif;
-    color: #000; /* Negro */
+    color: #000; 
     margin-left: 500px;
     font-size: 20px;
 }
 
 #titulo {
     text-decoration: underline;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 #precio {
     margin-left: 900px;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 #Bio {
     width: 80%;
     max-width: 1500px;
     padding: 10px 30px 1px 30px;
-    background-color: rgba(21, 84, 104, 0.9); /* Azul con opacidad */
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
     margin: 100px auto;
-    color: #FFF; /* Blanco */
+    color: #FFF; 
     font-family: 'Roboto', sans-serif;
 }
 
@@ -51,7 +50,7 @@ h1 {
 }
 
 .sinopsis {
-    color: #FFF; /* Blanco */
+    color: #FFF; 
     display: flex;
     margin-left: 500px;
     font-family: 'Playfair Display', serif;
@@ -67,7 +66,7 @@ h1 {
     padding: 10px 20px;
     margin-top: 50px;
     background: rgb(241, 119, 87);
-    color: #070707; /* Negro */
+    color: #070707; 
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     transition: background 0.3s ease, transform 0.1s ease;
@@ -78,8 +77,8 @@ h1 {
 }
 
 .btn:hover {
-    background: #222; /* Negro */
-    color: #FFF; /* Blanco */
+    background: #222; 
+    color: #FFF; 
 }
 
 .btn:active {
@@ -90,15 +89,15 @@ h1 {
     position: absolute;
     top: 30px;
     left: 30px;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 .rules {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(53, 53, 53, 0.9); /* Gris oscuro con opacidad */
-    color: #FFF; /* Blanco */
+    background-color: rgba(53, 53, 53, 0.9); 
+    color: #FFF; 
     min-height: 100vh;
     max-width: 100%;
     width: 400px;
@@ -115,18 +114,18 @@ h1 {
 
 #lista {
     font-family: 'Playfair Display', serif;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 #close-btn {
     margin-left: 5px;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 .menu {
     background-color: rgba(53, 53, 53, 0);
     padding: 15px;
-    color: #FFF; /* Blanco */
+    color: #FFF; 
     margin-top: 30px;
     text-decoration: none;
     font-size: 30px;
