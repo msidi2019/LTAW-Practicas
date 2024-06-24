@@ -1,21 +1,21 @@
 body{
-    background-image:url('Fotos/snupi.jpg');
+    background-image:url('Fotos/the1975.jpg');
 }
 
 
 h1 {
     width: 93%;
     padding: 20px;
-    background-color: lightgreen;
+    background-color: rgb(177, 65, 134);
     border-radius: 10px;
     text-align: center;
   }
 
 .blue {
-    color: blue;
+    color: rgba(0, 208, 255, 0.852);
 }
 
   #displays {
-      border: 2px solid lightblue;
+      border: 2px solid rgb(173, 214, 230);
       padding: 10px;
   }
