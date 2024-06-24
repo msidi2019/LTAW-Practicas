@@ -1,0 +1,40 @@
+{
+    "productos": [
+      {
+        "id": "TTMD",
+        "stock": 5,
+        "precio": "40.99€"
+      },
+      {
+        "id": "Nevermind",
+        "stock": 5,
+        "precio": "31.99€"
+      },
+      {
+        "id": "Tpab",
+        "stock": 5,
+        "precio": "45.99€"
+      },
+      {
+        "id": "Tfs",
+        "stock": 5,
+        "precio": "59.22€"
+      },
+      {
+        "id": "TC4",
+        "stock": 5,
+        "precio": "23.66€"
+      },
+      {
+        "id": "blond",
+        "stock": 5,
+        "precio": "80.99€"
+      },
+      {
+        "id": "SOS",
+        "stock": 5,
+        "precio": "27.99€"
+      }
+    ]
+    
+}
